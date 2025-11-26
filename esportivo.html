@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMotors | Carros Esportivos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header>
+    <div class="container nav" aria-label="Barra de navegação">
+      <div class="logo" aria-label="AutoMotors">
+        <div class="logo-mark" aria-hidden="true">A</div>
+        <span>AutoMotors</span>
+      </div>
+      <nav class="nav-links" aria-label="Seções principais">
+        <a href="index.html">Início</a>
+        <a href="comparacao.html">Comparação</a>
+        <a href="eletrico.html">Elétricos</a>
+        <a href="luxo.html">Luxo</a>
+        <a href="esportivo.html">Esportivos</a>
+        <a href="suv.html">SUVs</a>
+        <a href="conversivel.html">Conversíveis</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-bar">
+          <label class="hidden" for="searchInput">Pesquisar carros</label>
+          <input id="searchInput" type="search" placeholder="Buscar carros..." aria-label="Pesquisar carros">
+          <div id="searchResults" class="search-results" role="listbox" aria-label="Resultados da busca"></div>
+        </div>
+        <button id="configBtn" aria-label="Abrir configurações">⚙️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="category-banner">
+      <p class="tagline">Adrenalina, aerodinâmica e som de motor inesquecível.</p>
+      <h1>Carros esportivos</h1>
+      <p>Modelos de alta performance com direção precisa, potência e freios de pista para quem acelera de verdade.</p>
+    </div>
+
+    <p class="intro">Esportivos entregam respostas imediatas, tração afinada e pacotes de segurança ativa para diversão com controle total.</p>
+
+    <div class="grid">
+      <article class="card" tabindex="0">
+        <img src="img/porsche-911-carrera-s.jpg" alt="Porsche 911 Carrera S prata">
+        <div class="card-meta">
+          <span class="badge">Esportivo</span>
+          <span class="price">R$ 1.150/dia</span>
+        </div>
+        <h3>Porsche 911 Carrera S</h3>
+        <p>Flat-six biturbo, 0-100 km/h em 3,5s e precisão lendária nas curvas.</p>
+        <div class="card-actions">
+          <a class="btn" href="esportivo/porsche-911-carrera-s.html">Alugar</a>
+          <a class="btn ghost" href="esportivo/porsche-911-carrera-s.html">Ver detalhes</a>
+        </div>
+      </article>
+      <article class="card" tabindex="0">
+        <img src="img/corvette-stingray.jpg" alt="Chevrolet Corvette Stingray vermelho">
+        <div class="card-meta">
+          <span class="badge">Esportivo</span>
+          <span class="price">R$ 980/dia</span>
+        </div>
+        <h3>Chevrolet Corvette Stingray</h3>
+        <p>V8 central de 495 cv, escape ativo e presença marcante em qualquer avenida.</p>
+        <div class="card-actions">
+          <a class="btn" href="esportivo/corvette-stingray.html">Alugar</a>
+          <a class="btn ghost" href="esportivo/corvette-stingray.html">Ver detalhes</a>
+        </div>
+      </article>
+      <article class="card" tabindex="0">
+        <img src="img/bmw-m4-competition.jpg" alt="BMW M4 Competition verde">
+        <div class="card-meta">
+          <span class="badge">Esportivo</span>
+          <span class="price">R$ 940/dia</span>
+        </div>
+        <h3>BMW M4 Competition</h3>
+        <p>510 cv, tração M xDrive e câmbio rápido para acelerar sem hesitar.</p>
+        <div class="card-actions">
+          <a class="btn" href="esportivo/bmw-m4-competition.html">Alugar</a>
+          <a class="btn ghost" href="esportivo/bmw-m4-competition.html">Ver detalhes</a>
+        </div>
+      </article>
+      <article class="card" tabindex="0">
+        <img src="img/audi-r8-v10.jpg" alt="Audi R8 V10 cinza">
+        <div class="card-meta">
+          <span class="badge">Esportivo</span>
+          <span class="price">R$ 1.400/dia</span>
+        </div>
+        <h3>Audi R8 V10</h3>
+        <p>Supercarro aspirado, som icônico e tração quattro para máxima aderência.</p>
+        <div class="card-actions">
+          <a class="btn" href="esportivo/audi-r8-v10.html">Alugar</a>
+          <a class="btn ghost" href="esportivo/audi-r8-v10.html">Ver detalhes</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 AutoMotors. Todos os direitos reservados. | <a href="termos.html" aria-label="Termos de uso">Termos de uso</a> | <a href="contato.html" aria-label="Contato">Contato</a></p>
+    </div>
+  </footer>
+
+  <div id="configPanel" class="config-panel" aria-label="Painel de configurações">
+    <div class="config-row">
+      <h3>Configurações</h3>
+      <button id="closeConfig" aria-label="Fechar configurações">✕</button>
+    </div>
+    <div class="config-row">
+      <span>Tema claro/escuro</span>
+      <button id="themeToggle" class="toggle" aria-label="Alternar tema"></button>
+    </div>
+    <div class="config-row">
+      <span>Tamanho do texto</span>
+      <div class="font-controls" aria-label="Ajustar tamanho do texto">
+        <button id="fontDown" aria-label="Diminuir fonte">A-</button>
+        <button id="fontReset" aria-label="Fonte padrão">A</button>
+        <button id="fontUp" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
